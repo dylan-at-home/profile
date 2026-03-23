@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, intial-scale=1">
+	  <title>Air Quality Monitor</title>
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<img src="../source/logo2.svg" alt"">
+			</div>
+
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="../index.html #home" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="../index.html #about" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="../index.html #work" class="nav__link">Portfolio</a></li>
+					<li class="nav__item"><a href="../index.html #contact" class="nav__link">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<section class="portfolio__page">
+			
+			<h1>
+				SMART AIR QUALITY MONITOR
+			</h1>
+			<h2>
+				ESPHome Coding and IoT Packaging
+			</h2>
+			<h4 class="portfolio__ratio">
+				Workshop Air Quality Monitor: Industrial Design 75% | Computer Science 25%
+			</h4>
+			
+			<p class="section__subtitle">
+				This project aimed to achieve a starting point measured baseline for the Air Quality inside a Workshop environment.
+				With the proliferation of cheap, easy to use sensors and the ESPhome platform integrated with Home Assistant.
+				The end results is a connected set of sensors to either use to simply measure the environment or to use as a trigger
+				for other connected actuators.
+			</p>
+
+			<img src="../source/portfolio/AQ_images/AQ-main.JPG" class="portfolio__page--image">
+
+			<br>
+
+			<p class="section__subtitle">
+				The main components used in this build is an ESP32 dev board, various I2C connected sensors and a 7inch colour e-ink display.
+				The e-ink display was chosen for its low power usage and passive reflective screen in order to not overwhelm the user.
+				The outer housing was designed to fit in with a rugged aesthetic that would suit an industrial workship environment.
+			</p>
+
+			<img src="../source/portfolio/AQ_images/AQ-breadboard.JPG" class="portfolio__page--image">
+
+			<br>
+            <p class="section__subtitle">
+				The housing and bumpers were modelled in SolidWorks and printed in PLA for the body and TPU for the border.
+				Once connected back to home assistant, the vast array of sensors can be used as triggers for any scenario,
+				i.e. if a certain sensor reads past a certain value, any number of warnings on various devices or connected outputs
+				can be triggered to alert a user.
+			</p>
+			
+			<img src="../source/portfolio/AQ_images/AQ-rend-mix.JPG" class="portfolio__page--image">
+
+			<br>
+            <p class="section__subtitle">
+				This type of project is now possible to create as an individual due to how <a href="https://esphome.io/">ESPHome</a>
+				simplifies the connectivity of many various components for smart home devices. Going forward
+				and improving on this project, it could be simplified a lot with a custom PCB to connect all the sensors and display
+				to, while at the same time allowing for a much sleeker and thinner housing package.
+			</p>
+
+		</section>
+
+		
+
+
+		<footer class="footer" id="contact">
+			<a class="footer__link"> Get In Contact</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a href="https://www.linkedin.com/in/dylan-toth-99689055/" class="fa fa-linkedin social-list__link"></a>
+				</li>
+				<li class="social-list__item">
+					<a href="https://github.com/dylan-at-home" class="fa fa-github social-list__link" ></a>
+				</li>
+
+			</ul>
+		</footer>
+
+		<script src="../js/index.js"></script>
+
+	</body>
+</html>
+
